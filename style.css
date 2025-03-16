@@ -1,0 +1,143 @@
+/* Load the MedievalSharp font locally */
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url('MedievalSharp.ttf') format('truetype');
+    font-display: swap;
+}
+
+body {
+    font-family: 'MedievalSharp', Georgia, serif !important;
+    margin: 10px !important;
+    padding: 15px !important;
+    background: linear-gradient(to bottom, #f4ecd8 0%, #e6d7b5 100%) !important;
+    background-image: url('parchment.jpg') !important;
+    background-size: contain !important;
+    background-repeat: repeat !important;
+    color: #7a7267 !important;
+    min-width: 300px !important;
+    max-width: 500px !important;
+    width: auto !important;
+    border: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+    overflow-y: auto !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    background-attachment: local !important;
+    font-size: 16px !important;
+}
+
+h1, h2, #xpNeeded {
+    color: #7a7267 !important;
+    font-weight: bold !important;
+    text-shadow: none !important;
+}
+
+label, #currentLevelDisplay {
+    color: #7a7267 !important;
+    text-shadow: 1px 1px 0 #3a3a3a, -1px -1px 0 #3a3a3a, 1px -1px 0 #3a3a3a, -1px 1px 0 #3a3a3a;
+}
+
+#currentXP + p {
+    margin-top: 10px;
+}
+
+#currentLevelDisplay {
+    margin-bottom: 5px;
+}
+
+select, input {
+    width: 100% !important;
+    padding: 8px !important;
+    margin-top: 5px !important;
+    box-sizing: border-box !important;
+    background-color: #d9c8a3 !important;
+    color: #333 !important;
+    font-family: 'MedievalSharp', Georgia, serif !important;
+    border-radius: 3px !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+#calculateButtonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#calculateButton {
+    width: auto !important;
+    padding: 15px 20px !important;
+    background-image: url('button.jpg') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    font-family: 'MedievalSharp', Georgia, serif !important;
+    border-radius: 5px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#calculateButton:hover {
+    opacity: 0.9;
+}
+
+#results {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: auto !important;
+    border-collapse: collapse !important;
+    margin-top: 10px !important;
+    font-size: 16px !important;
+    background-color: #d9c8a3 !important;
+    border: none !important;
+}
+
+th, td {
+    border: none !important;
+    padding: 10px !important;
+    text-align: left !important;
+    font-weight: bold !important;
+    color: #333 !important;
+}
+
+th {
+    background-color: #5a3e1b !important;
+    color: #f4ecd8 !important;
+    font-weight: bold !important;
+}
+
+tr:nth-child(even) {
+    background-color: #e6d7b5 !important;
+}
+
+tr:hover {
+    background-color: #c9b893 !important;
+}
+
+#itemsTable {
+    max-height: 100%;
+    overflow-y: auto !important;
+    display: block !important;
+}
+
+#itemsTable thead {
+    position: sticky !important;
+    top: 0 !important;
+    background-color: #5a3e1b !important;
+}
