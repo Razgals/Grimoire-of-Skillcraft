@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Old Grimoire of Gielinor</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Grimoire of Skillcraft</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Ascertain Your Wisdom</h1>
-  <div>
+    <h1>Ascertain Your Wisdom</h1>
+
     <label for="skillSelect">Select Skill:</label>
     <select id="skillSelect">
-      <option value="prayer">Prayer</option>
-      <option value="craftingPottery">Crafting</option>
-      <option value="mining">Mining</option>
-      <option value="smithingBronze">Smithing</option>
-      <option value="fishing">Fishing</option>
-      <option value="cooking">Cooking</option>
-      <option value="firemaking">Firemaking</option>
-      <option value="woodcutting">Woodcutting</option>
+        <option value="woodcutting">Woodcutting</option>
+        <option value="thievingPickpocketing">Thieving (Pickpocketing)</option>
+        <option value="thievingStalls">Thieving (Stalls)</option>
+        <option value="smithingBronze">Smithing (Bronze)</option>
+        <option value="smithingIron">Smithing (Iron)</option>
+        <option value="smithingSteel">Smithing (Steel)</option>
+        <option value="smithingMithril">Smithing (Mithril)</option>
+        <option value="smithingAdamantite">Smithing (Adamantite)</option>
+        <option value="smithingRune">Smithing (Rune)</option>
+        <option value="smelting">Smelting</option>
+        <option value="prayer">Prayer</option>
+        <option value="mining">Mining</option>
+        <option value="herbloreCleaning">Herblore (Cleaning)</option>
+        <option value="herblorePotions">Herblore (Potions)</option>
+        <option value="fletchingArrows">Fletching (Arrows)</option>
+        <option value="fletchingBows">Fletching (Bows)</option>
+        <option value="fletchingDarts">Fletching (Darts)</option>
+        <option value="fletchingBolts">Fletching (Bolts)</option>
+        <option value="fishing">Fishing</option>
+        <option value="firemaking">Firemaking</option>
+        <option value="craftingPottery">Crafting (Pottery)</option>
+        <option value="craftingLeather">Crafting (Leather)</option>
+        <option value="craftingGems">Crafting (Gems)</option>
+        <option value="craftingRings">Crafting (Rings)</option>
+        <option value="craftingNecklaces">Crafting (Necklaces)</option>
+        <option value="craftingAmulets">Crafting (Amulets)</option>
+        <option value="craftingSilver">Crafting (Silver)</option>
+        <option value="cooking">Cooking</option>
     </select>
-  </div>
-  <div>
+
     <label for="currentXP">Current XP:</label>
-    <input type="number" id="currentXP" min="0" value="0">
-    <p id="currentLevelDisplay">Current Level: 1</p>
-  </div>
-  <div>
+    <input type="number" id="currentXP" value="0">
+    <p id="currentLevelDisplay">Current Level: 1 (based on 0 XP)</p>
+
     <label for="desiredLevel">Desired Level:</label>
-    <input type="number" id="desiredLevel" min="1" max="99" value="1">
-  </div>
-  <div id="calculateButton">Calculate</div> <div id="results">
-    <h2>Results</h2>
-    <p id="xpNeeded"></p>
-    <table id="itemsTable">
-      <thead>
-        <tr>
-          <th>Action/Item</th>
-          <th>XP per Action</th>
-          <th>Level Required</th>
-          <th>Actions Needed</th>
-        </tr>
-      </thead>
-      <tbody id="itemsBody"></tbody>
-    </table>
-  </div>
-  <script src="popup.js"></script>
+    <input type="number" id="desiredLevel" value="99">
+
+    <div id="calculateButtonContainer">
+        <button id="calculateButton">Calculate</button>
+    </div>
+
+    <div id="results">
+        <h2>Results</h2>
+        <p id="xpNeeded"></p>
+        <table id="itemsTable">
+            <thead>
+                <tr>
+                    <th>Action/Item</th>
+                    <th>XP per Action</th>
+                    <th>Level Required</th>
+                    <th>Actions Needed</th>
+                </tr>
+            </thead>
+            <tbody id="itemsBody"></tbody>
+        </table>
+    </div>
+
+    <script src="popup.js"></script>
 </body>
 </html>
